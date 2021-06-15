@@ -77,7 +77,7 @@ Shader "Custom/Gradient Mobile" {
             #include "AutoLight.cginc"
             #pragma multi_compile_fwdbase_fullshadows
             #pragma multi_compile_fog
-            #pragma target 3.0
+            #pragma target 2.0
             uniform float4 _LightColor0;
             uniform sampler2D _Diffuse; uniform float4 _Diffuse_ST;
             uniform sampler2D _Normal; uniform float4 _Normal_ST;
@@ -181,7 +181,7 @@ Shader "Custom/Gradient Mobile" {
             #include "AutoLight.cginc"
             #pragma multi_compile_fwdadd_fullshadows
             #pragma multi_compile_fog
-            #pragma target 3.0
+            #pragma target 2.0
             uniform float4 _LightColor0;
             uniform sampler2D _Diffuse; uniform float4 _Diffuse_ST;
             uniform sampler2D _Normal; uniform float4 _Normal_ST;
@@ -281,7 +281,7 @@ Shader "Custom/Gradient Mobile" {
             #pragma fragmentoption ARB_precision_hint_fastest
             #pragma multi_compile_shadowcaster
             #pragma multi_compile_fog
-            #pragma target 3.0
+            #pragma target 2.0
             struct VertexInput {
                 float4 vertex : POSITION;
             };
